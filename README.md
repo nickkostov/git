@@ -67,32 +67,37 @@ git rm
 git log
 ```
 
-git log --graph --> show a textual graph of a project's commit history
+### Get historical statistics:
+```bash
+git log --graph 
+```
+### Get Statistics of the files with each commit
+```bash
+git log --stat
+```
+### Get manual page of Git Log
+```bash
+man git-log
+```
 
-git log --stat --> show statistics of the files with each commit
-
-git log --prettry=fomat: format the output of a git log command to display specific fields check example
-
-man git-log --> local documentation on using the 'git log' command
-
-
-///
-examples of "git log"
-
+### Get Git Log for the last period
+```bash
 git log --since="4 days ago"
-
+```
+### Look for differences that change the number of occurrences of the specified string (i.e. addition/deletion) in a file. Intended for the scripter’s use.
+```bash
 git log -S build
-
-git stat
-
-git log --pretty=format:"%h - %an - %ar - %s"om"
-
+```
+### Gets changes and shows you whne was the last change applied
+```bash
+git log --pretty=format:"%h - %an - %ar - %s"'om'
+```
+### Select Core Editor (My preferences are VSC and VIM)
+```bash
 git config --global core.editor "/usr/bin/vim"  
+```
+### Location of .gitconfig in UNIX/Linux based systems:
 
+```bash
 cat ~/.gitconfig
-
-git status --> shows what files are in the staging area
-
-git status -a 
-
-//
+```
